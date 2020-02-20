@@ -1,1 +1,24 @@
 // Mixins in here
+
+.rowFlex(@justify:space-between, @align:center) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.bottomBorder() {
+  border-bottom: 2px dashed @navigation-border;
+}
+
+.button(@bgColor:@button-bg, @fontColor:@buttonColor, @width:200px,) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: @bgColor;
+  color: @fontColor;
+  cursor: pointer;
+  width: @width;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 15px;
+}

@@ -1,13 +1,27 @@
+header {
+  .bottomBorder();
+  div {
+    .rowFlex();
+  } //closes header div
+} // closes header{}
+.intro {
+  .bottomBorder();
+  
+  h2, p, img {
+    padding-bottom: 2%;
+  }
+  
+}
+    .btn{
+      .button();
+    }
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -25,7 +39,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .bottomBorder();
 
     .text-content {
       padding-left: 1%;
@@ -57,5 +71,6 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
   }
-}// home
+} // home

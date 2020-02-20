@@ -5,6 +5,12 @@
   justify-content: @justify;
   align-items: @align;
 }
+.colFlex(@justify:center, @align:center) {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: @justify;
+  align-items: @align;
+}
 
 .bottomBorder() {
   border-bottom: 2px dashed @navigation-border;

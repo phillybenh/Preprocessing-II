@@ -247,6 +247,8 @@ header div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  animation-name: test;
+  animation-duration: 4s;
 }
 @media (max-width: 500px) {
   .home .content-section {
@@ -276,6 +278,14 @@ header div {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@keyframes test {
+  from {
+    background-color: #FFFFFF;
+  }
+  to {
+    background-color: peachpuff;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;

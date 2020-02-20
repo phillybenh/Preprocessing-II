@@ -16,7 +16,7 @@
   border-bottom: 2px dashed @navigation-border;
 }
 
-.button(@bgColor:@button-bg, @fontColor:@buttonColor, @width:200px,) {
+.button(@bgColor:@button-bg, @fontColor:@buttonColor, @width:200px) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,4 +27,22 @@
   height: 45px;
   font-size: 2rem;
   border-radius: 15px;
+}
+
+
+// Stretch Goal #1
+
+.animateColor(@name, @from, @to) {
+
+  animation-name: @name;
+  animation-duration: 4s;
+
+  @keyframes @name {
+    from {
+      background-color: @from;
+    }
+    to {
+      background-color: @to;
+    }
+  }
 }
